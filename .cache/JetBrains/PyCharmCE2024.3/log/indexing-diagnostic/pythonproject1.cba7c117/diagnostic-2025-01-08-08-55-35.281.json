@@ -1,0 +1,64 @@
+{
+  "appInfo" : {
+    "build" : "243.22562.180",
+    "buildDate" : "2024-12-11T15:15:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-01-08T05:55:35.28229988Z",
+    "os" : "Linux 6.8.0-41-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.5 21.0.5+8-b631.28"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 1572864000,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 3,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "PythonProject1",
+    "times" : {
+      "scanningReason" : "changes in: \"Python SDK Python 3.12 (PythonProject1) /home/kutwa/PycharmProjects/PythonProject1/.venv/bin/python\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 4,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 4701499790,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 281663004,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 4418435828,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 160082,
+      "dumbWallTimeWithPauses" : 0,
+      "dumbWallTimeWithoutPauses" : 0,
+      "updatingStart" : "2025-01-08T05:55:30.525993188Z",
+      "updatingEnd" : "2025-01-08T05:55:35.252708202Z",
+      "totalWallTimeWithPauses" : 4726715014,
+      "wallTimeOnPause" : 504823,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 4726210191
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 6682,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 8
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK Python 3.12 (PythonProject1) /home/kutwa/PycharmProjects/PythonProject1/.venv/bin/python",
+      "numberOfScannedFiles" : 6682,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 8,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 3774954324,
+      "totalOneThreadTimeWithPauses" : 4701499790,
+      "iterationAndScannersApplicationTime" : 281663004,
+      "filesCheckTime" : 4418435828,
+      "timeProcessingUpToDateFiles" : 1690854477,
+      "timeUpdatingContentLessIndexes" : 2695579,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 160082,
+      "roots" : [ ]
+    } ]
+  }
+}

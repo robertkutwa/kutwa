@@ -1,0 +1,65 @@
+{
+  "appInfo" : {
+    "build" : "243.22562.180",
+    "buildDate" : "2024-12-11T15:15:00Z[UTC]",
+    "productCode" : "PC",
+    "generated" : "2025-01-08T05:53:48.713665833Z",
+    "os" : "Linux 6.8.0-41-generic",
+    "runtime" : "JetBrains s.r.o. 21.0.5 21.0.5+8-b631.28"
+  },
+  "runtimeInfo" : {
+    "maxMemory" : 1572864000,
+    "numberOfProcessors" : 4,
+    "maxNumberOfIndexingThreads" : 3,
+    "maxSizeOfFileForIntelliSense" : 2560000,
+    "maxSizeOfFileForContentLoading" : 20971520
+  },
+  "type" : "Scanning",
+  "projectIndexingActivityHistory" : {
+    "projectName" : "PythonProject",
+    "times" : {
+      "scanningReason" : "changes in: \"Python SDK Python 3.12 (PythonProject) /home/kutwa/PycharmProjects/PythonProject/.venv/bin/python\"",
+      "scanningType" : "PARTIAL",
+      "scanningId" : 1,
+      "creatingIteratorsTime" : 0,
+      "concurrentHandlingWallTimeWithoutPauses" : 0,
+      "concurrentHandlingWallTimeWithPauses" : 0,
+      "concurrentHandlingSumOfThreadTimesWithPauses" : 6376386898,
+      "concurrentIterationAndScannersApplicationSumOfThreadTimesWithPauses" : 2007464182,
+      "concurrentFileCheckSumOfThreadTimesWithPauses" : 4367199334,
+      "delayedPushPropertiesStageTime" : 0,
+      "indexExtensionsTime" : 296524599,
+      "dumbModeStart" : "2025-01-08T05:53:44.982891246Z",
+      "dumbWallTimeWithPauses" : 3724607594,
+      "dumbWallTimeWithoutPauses" : 3724607594,
+      "updatingStart" : "2025-01-08T05:53:42.315368882Z",
+      "updatingEnd" : "2025-01-08T05:53:48.70749884Z",
+      "totalWallTimeWithPauses" : 6392129958,
+      "wallTimeOnPause" : 1300269,
+      "wasInterrupted" : false,
+      "totalWallTimeWithoutPauses" : 6390829689
+    },
+    "fileCount" : {
+      "numberOfFileProviders" : 1,
+      "numberOfScannedFiles" : 6683,
+      "numberOfFilesIndexedByInfrastructureExtensionsDuringScan" : 0,
+      "numberOfFilesScheduledForIndexingAfterScan" : 5536
+    },
+    "scanningStatistics" : [ {
+      "providerName" : "Python SDK Python 3.12 (PythonProject) /home/kutwa/PycharmProjects/PythonProject/.venv/bin/python",
+      "numberOfScannedFiles" : 6683,
+      "numberOfSkippedFiles" : 1,
+      "numberOfFilesForIndexing" : 5536,
+      "numberOfFilesFullyIndexedByInfrastructureExtensions" : 0,
+      "filesFullyIndexedByInfrastructureExtensions" : [ ],
+      "statusTime" : 3073121895,
+      "totalOneThreadTimeWithPauses" : 6376386898,
+      "iterationAndScannersApplicationTime" : 2007464182,
+      "filesCheckTime" : 4367199334,
+      "timeProcessingUpToDateFiles" : 172932760,
+      "timeUpdatingContentLessIndexes" : 787100236,
+      "timeIndexingWithoutContentViaInfrastructureExtension" : 296524599,
+      "roots" : [ ]
+    } ]
+  }
+}
