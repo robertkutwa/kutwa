@@ -1,135 +1,64 @@
-# 🎬 Late Show API
 
-A RESTful backend service for managing a fictional late-night talk show. The API supports user authentication, guest and episode management, and tracks guest appearances with performance ratings.
 
-Built with Flask, PostgreSQL, and JWT for secure access control.
+# Show Main API
 
----
+## Setup & Run Instructions
 
-## 🔧 Tech Stack
+### 1. Clone the repository and enter the project directory
 
-- **Backend:** Python, Flask, Flask SQLAlchemy, Flask-JWT-Extended
-- **Database:** PostgreSQL
-- **Migrations:** Flask-Migrate
-- **Auth:** JWT (Token-Based Authentication)
-- **Testing:** Postman
-- **Architecture:** Modular MVC
+```sh
+git clone <your-repo-url>
+cd "show-main (1)/show-main"
+```
 
----
+### 2. Create and activate a virtual environment
 
-## 🌐 API Endpoints
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
 
-| Method | Endpoint              | Auth | Description                            |
-|--------|-----------------------|------|----------------------------------------|
-| POST   | `/register`           | ❌    | Register a new user                    |
-| POST   | `/login`              | ❌    | Login and receive JWT token            |
-| GET    | `/guests`             | ❌    | Retrieve all show guests               |
-| GET    | `/episodes`           | ❌    | Retrieve all episodes                  |
-| GET    | `/episodes/<id>`      | ❌    | Retrieve a single episode + guests     |
-| POST   | `/appearances`        | ✅    | Create new guest appearance            |
-| DELETE | `/episodes/<id>`      | ✅    | Delete an episode and its appearances  |
+### 3. Install dependencies
 
-> 🔐 Protected routes require a valid JWT token in the `Authorization: Bearer <token>` header.
+```sh
+pip install -r requirements.txt
+```
 
----
+### 4. Create a `.env` file
 
-## 📁 Project Structure
+Create a file named `.env` in the project root with the following content:
 
-late-show-api-challenge/
-├── server/
-│ ├── app.py
-│ ├── config.py
-│ ├── seed.py
-│ ├── models/
-│ └── controllers/
-├── migrations/
-├── .env
-├── Pipfile
-├── README.md
-└── challenge-4-lateshow.postman_collection.json
+```
+DATABASE_URL=sqlite:///app.db
+JWT_SECRET_KEY=your-very-secret-key
+```
 
-yaml
-Copy
-Edit
+You can change these values as needed.
 
----
+### 5. Set the Flask app environment variable
 
-## 🚀 Getting Started
+```sh
+export FLASK_APP=server.app
+```
 
-### 1. Clone the Repo
+### 6. Run database migrations (optional, if using Flask-Migrate)
 
-```bash
-git clone https://github.com/<your-username>/late-show-api-challenge.git
-cd late-show-api-challenge
-2. Set Up Environment
-Install dependencies:
-
-bash
-Copy
-Edit
-pipenv install
-pipenv shell
-Create a .env file:
-
-ini
-Copy
-Edit
-DB_USER=your_postgres_user
-DB_PASSWORD=your_password
-DB_NAME=late_show_db
-DB_HOST=localhost
-DB_PORT=5432
-JWT_SECRET_KEY=your_secret_key
-Be sure to keep your .env file out of version control.
-
-3. Database Setup
-Ensure PostgreSQL is running, then run:
-
-bash
-Copy
-Edit
-flask db init
-flask db migrate -m "Initial migration"
+```sh
 flask db upgrade
-python server/seed.py
-4. Run the App
-bash
-Copy
-Edit
+```
+
+### 7. Start the development server
+
+```sh
 flask run
-App will be available at:
-http://localhost:5000
+```
 
-🧪 Testing the API
-Use Postman to test all routes.
+The API will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-Import the provided collection:
+---
 
-pgsql
-Copy
-Edit
-challenge-4-lateshow.postman_collection.json
-Authenticate using /login, then copy the JWT token and set it as a variable or use it directly in headers.
+## Notes
 
-📌 Highlights
-Secure route protection using JWT
-
-Relationship modeling via SQLAlchemy ORM
-
-Cascade deletion of related data
-
-Modular, scalable architecture
-
-Fully tested endpoints
-
-✍️ Author
-George Mwazuna
-Backend Developer
-GitHub Profile
-
-🏁 License
-This project is open-source and available under the MIT License.
-
-markdown
-Copy
-Edit
+- Make sure your Python interpreter matches the one used to install dependencies.
+- If you use a different database, update `DATABASE_URL` in your `.env` file accordingly.
+- For production, set a strong `JWT_SECRET_KEY` and configure your web server appropriately.
